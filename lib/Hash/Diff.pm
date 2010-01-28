@@ -87,6 +87,11 @@ This will only handle HASH and SCALAR.
 Plans for a future version include incorporate deep recursion protection.
 And support for ARRAY.
 
+=head1 BUGS
+
+Sure!
+Report here: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Hash::Diff
+
 =head1 AUTHOR
 
 Bjorn-Olav Strand E<lt>bo@startsiden.noE<gt>
