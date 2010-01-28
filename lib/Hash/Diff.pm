@@ -41,3 +41,61 @@ sub diff {
 
 
 1;
+
+__END__
+
+=head1 NAME
+
+Hash::Diff - Return difference between to hashes as a hash
+
+=head1 SYNOPSIS
+
+    use Hash::Diff qw( diff );
+    my %a = ( 
+		'foo'    => 1,
+	    'bar'    => { a => 1, b => 1 },
+	);
+    my %b = ( 
+		'foo'     => 2, 
+		'bar'    => { a => 1 },
+	);
+
+    my %c = %{ diff( \%a, \%b ) };
+    
+    # %c = %{ foo => 1, bar => { b => 1} }
+
+=head1 DESCRIPTION
+
+Hash::Diff returns the diffrence between to hashes as a hash.
+
+=over 
+
+=item diff ( <hashref>, <hashref> )
+
+Diffs two hashes.  Returns a reference to the new hash.
+
+=item left_diff ( <hashref>, <hashref> )
+
+Returns the values in the left hash that is not, or diffrent from the right hash.
+
+
+=head1 CAVEATS
+
+This will not handle self-referencing/recursion within hashes well.  
+This will only handle HASH and SCALAR. 
+
+Plans for a future version include incorporate deep recursion protection.
+And support for ARRAY.
+
+=head1 AUTHOR
+
+Bjorn-Olav Strand E<lt>bo@startsiden.noE<gt>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2010 ABC Startsiden AS. All rights reserved.
+
+This library is free software.  You can redistribute it and/or modify it 
+under the same terms as Perl itself.
+
+=cut

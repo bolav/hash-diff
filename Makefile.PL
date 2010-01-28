@@ -7,6 +7,8 @@ license  'perl';
 
 build_requires 'Test::More';
 
+requires 'Hash::Merge';
+
 auto_install;
 
 WriteAll;
