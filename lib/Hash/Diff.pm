@@ -8,10 +8,8 @@ use Hash::Merge;
 use base 'Exporter';
 use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS);
 
-$VERSION     = "0.001";
+$VERSION     = "0.002";
 @EXPORT_OK   = qw( diff left_diff );
-
-use Data::Dump qw/dump/;
 
 sub left_diff {
     my ($h1, $h2) = @_;
