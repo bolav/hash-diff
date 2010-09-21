@@ -8,7 +8,7 @@ use Hash::Merge;
 use base 'Exporter';
 use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS);
 
-$VERSION     = 0.003;
+$VERSION     = 0.004;
 @EXPORT_OK   = qw( diff left_diff );
 
 sub left_diff {
@@ -66,7 +66,7 @@ Hash::Diff - Return difference between to hashes as a hash
 
 =head1 DESCRIPTION
 
-Hash::Diff returns the diffrence between to hashes as a hash.
+Hash::Diff returns the difference between two hashes as a hash.
 
 =over 
 
@@ -76,7 +76,7 @@ Diffs two hashes.  Returns a reference to the new hash.
 
 =item left_diff ( <hashref>, <hashref> )
 
-Returns the values in the left hash that is not, or diffrent from the right hash.
+Returns the values in the left hash that is not, or different from the right hash.
 
 
 =head1 CAVEATS
