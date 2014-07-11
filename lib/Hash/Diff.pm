@@ -8,7 +8,7 @@ use Hash::Merge;
 use base 'Exporter';
 use vars qw($VERSION @ISA @EXPORT_OK %EXPORT_TAGS);
 
-$VERSION     = 0.005;
+$VERSION     = 0.006;
 @EXPORT_OK   = qw( diff left_diff );
 
 sub left_diff {
@@ -18,7 +18,8 @@ sub left_diff {
     foreach my $k (keys %{$h1}) {
         if (ref $h1->{$k} eq 'HASH') {
             if (ref $h2->{$k} eq 'HASH') {
-                $rh->{$k} = left_diff($h1->{$k}, $h2->{$k});
+                my $d = left_diff($h1->{$k}, $h2->{$k});
+                $rh->{$k} = $d if (%$d);
             }
             else {
                 $rh->{$k} = $h1->{$k}                
@@ -78,6 +79,7 @@ Diffs two hashes.  Returns a reference to the new hash.
 
 Returns the values in the left hash that is not, or different from the right hash.
 
+=back
 
 =head1 CAVEATS
 
