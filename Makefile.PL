@@ -10,6 +10,8 @@ build_requires 'Test::More';
 requires 'Hash::Merge';
 requires 'ok';
 
+repository 'https://github.com/bolav/hash-diff';
+
 auto_install;
 
 WriteAll;
