@@ -13,10 +13,13 @@ $VERSION     = 0.006;
 
 sub left_diff {
     my ($h1, $h2) = @_;
-    my $rh = {};
+    my $rh = {}; # return_hash
     
     foreach my $k (keys %{$h1}) {
-        if (ref $h1->{$k} eq 'HASH') {
+        if (not defined $h1->{$k} and exists $h2->{$k} and not defined $h2->{$k}) {
+            # Empty
+        }
+        elsif (ref $h1->{$k} eq 'HASH') {
             if (ref $h2->{$k} eq 'HASH') {
                 my $d = left_diff($h1->{$k}, $h2->{$k});
                 $rh->{$k} = $d if (%$d);
