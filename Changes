@@ -1,6 +1,6 @@
 Revision history for Perl module Hash::Diff
 
-0.008 2015-08-??
+0.008 2015-08-27
   - Added github repo to Makefile.PL so it will appear in META.*
 
 0.007 2015-08-25
