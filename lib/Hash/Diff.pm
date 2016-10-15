@@ -28,7 +28,7 @@ sub left_diff {
                 $rh->{$k} = $h1->{$k}                
             }
         }
-        elsif ((!defined $h2->{$k})||($h1->{$k} ne $h2->{$k})) {
+        elsif ((!defined $h1->{$k})||(!defined $h2->{$k})||($h1->{$k} ne $h2->{$k})) {
             $rh->{$k} = $h1->{$k}
         }
     }
