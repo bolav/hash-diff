@@ -3,7 +3,6 @@
 use strict;
 use Test::More tests => 4;
 use Hash::Diff;
-use Data::Dump qw/dump dd/;
 
 is_deeply(
 Hash::Diff::diff(
