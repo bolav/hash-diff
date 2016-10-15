@@ -1,9 +1,9 @@
-Hash-Diff
+# Hash-Diff [![Build Status](https://travis-ci.org/bolav/hash-diff.svg?branch=master)](https://travis-ci.org/bolav/hash-diff)
 
 Hash::Diff returns the diffrence between to hashes as a hash.
 
 
-INSTALLATION
+## INSTALLATION
 
 To install this module, run the following commands:
 
@@ -12,7 +12,7 @@ To install this module, run the following commands:
 	make test
 	make install
 
-SUPPORT AND DOCUMENTATION
+## SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the
 perldoc command.
@@ -34,7 +34,7 @@ You can also look for information at:
         http://search.cpan.org/dist/Hash::Diff/
 
 
-COPYRIGHT AND LICENCE
+## COPYRIGHT AND LICENCE
 
 Copyright (C) 2014 Bjorn-Olav Strand
 
