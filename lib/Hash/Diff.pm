@@ -101,6 +101,10 @@ Report here: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Hash::Diff
 
 Bjorn-Olav Strand E<lt>bo@startsiden.noE<gt>
 
+=head1 CONTRIBUTOR
+
+Charles McGarvey E<lt>ccm@cpan.orgE<gt>
+
 =head1 COPYRIGHT
 
 Copyright (c) 2010 ABC Startsiden AS. All rights reserved.
